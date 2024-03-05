@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>payments</title>
+</head>
+<body>
+    <div style="position: relative; width: auto; height: 300px;">
+        <img src="weee/money.jpg" height="300" width="auto" style="display: block; width: 100%; height: 100%; object-fit: cover;">
+    
+        <!-- Text overlay -->
+        <li><a href="online.html">
+            <button class="auto-size-button" style="background-color: rgb(73, 155, 194);color: #0d0e0c;border-radius: 50px;border-style: double;padding: 4px 6px;font-size: 15px;border: 6px double;border-color:rgb(135, 160, 197);width: 200px;cursor: pointer;text-align: center;"> click_to_use_online</button>
+        </a></li>
+        
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; font-size: 24px; font-weight: bold;">
+            <big>PAYMENT FORM</big>
+        </div>
+    </div>
+    
+    <section class="content">
+        <!-- Add faculty details here -->
+        <hr>
+
+        <hr>
+        <form method="post" name="sample">
+            <br>
+            <div style="width: 100%; overflow: hidden;">
+                <div style="float: left; width: 60%;">
+                    <p>
+                        <pre>
+                            <big>Roll No.</big>                : <input type="number" name="rollno" id="rollno">
+                        
+                            <big>Name</big>                     : <input type="text" name="name" id="name">
+                        
+                            <big>Student ID</big>              : <input type="text" name="studentID" id="studentID">
+                        
+                            <big>Total amount to pay</big>   : <input type="text" name="totalAmountToPay" id="totalAmountToPay">
+                        
+                            <big>Amount (paid)</big>          : <input type="text" name="amountPaid" id="amountPaid">
+                        
+                            <big>Balance (left)</big>         : <input type="text" name="balanceLeft" id="balanceLeft">
+                        </pre>
+                    </p>
+                </div>
+
+                <div style="clear: both;"></div>
+                <div style="float: right; width: 40%;">
+                    <img src="weee/momo.jpg" style="max-width: 100%; height: auto; width: 100%; display: block;">
+                </div>
+                
+            </div>
+            <img src="weee/momo.jpg" height="100" width="100"> <img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100"><img src="weee/momo.jpg" height="100" width="100">
+        
+            <br><br>
+            <input type="button" name="add" value="Add data" onclick="addStudent();">
+            <hr>
+            <table id="tb1" class="table" border="1">
+                <thead>
+                    <hr>
+                    <big><th>Roll No.</th></big>
+
+                    <big><th>Name</th></big>
+
+                    <big><th>Student ID</th></big>
+
+                    <big><th>Total amount to pay</th></big>
+
+                    <big><th>Amount (paid)</th></big>
+
+                    <big><th>Balance (left)</th></big>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </form>
+        
+        <script type="text/javascript">
+            function addStudent() {
+                var rollno = document.getElementById("rollno").value;
+                var name = document.getElementById("name").value;
+                var studentID = document.getElementById("studentID").value;
+                var totalAmountToPay = document.getElementById("totalAmountToPay").value;
+                var amountPaid = document.getElementById("amountPaid").value;
+                var balanceLeft = document.getElementById("balanceLeft").value;
+        
+                var tr = document.createElement('tr');
+        
+                var td1 = tr.appendChild(document.createElement('td'));
+                var td2 = tr.appendChild(document.createElement('td'));
+                var td3 = tr.appendChild(document.createElement('td'));
+                var td4 = tr.appendChild(document.createElement('td'));
+                var td5 = tr.appendChild(document.createElement('td'));
+                var td6 = tr.appendChild(document.createElement('td'));
+        
+                td1.innerHTML = rollno;
+                td2.innerHTML = name;
+                td3.innerHTML = studentID;
+                td4.innerHTML = totalAmountToPay;
+                td5.innerHTML = amountPaid;
+                td6.innerHTML = balanceLeft;
+        
+                document.getElementById("tb1").getElementsByTagName('tbody')[0].appendChild(tr);
+            }
+        </script>
+        
+    </section>
+    <footer>
+        <p>&copy; 2024 Faculty Website</p>
+    </footer>
+    <style>
+        /* Style for the colored box */
+        .colored-box {
+            background-color: #7e8488; /* Set the background color */
+            height: 5px; /* Set the height */
+            width: auto; /* Set the width */
+            margin: 20px; /* Add some margin for spacing */
+            padding: 10px; /* Add some padding for content spacing */
+            color: #fff; /* Set the text color */
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your colored box with height, width, and color -->
+    <div class="colored-box">
+         Thank You For Paying Your Fees.
+    </div>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            /*background-image: url('jh.jpg'); /* Set your image URL */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Do not repeat the background image */
+            font-family: 'Arial', sans-serif; /* Set a font for better readability */
+            color: #0a0a0a; /* Set text color */
+        }
+
+        #content-container {
+            padding: 20px; /* Add padding to the content container */
+            text-align: center; /* Center align content */
+        }
+    </style>
+    <body bgcolor ="white"></body>
+</body>
+</html>

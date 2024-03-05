@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Faculty Website</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Faculty Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="faculty.html">Faculty Details</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="timetables.html">Student Timetables</a></li>
+            <li><a href="payments.html">Payments</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2024 Faculty Website</p>
+    </footer>
+</body>
+</html>

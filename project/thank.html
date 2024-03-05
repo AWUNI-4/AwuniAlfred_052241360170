@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ring.css">
+    
+    <center>
+        <h1>
+        Thank You For Registering
+        </h1>
+    </center>
+
+</head>
+<body>
+
+  <button onclick="showPopup()">Close_page</button>
+
+  <!-- Popup container -->
+  <div id="popup" class="popup">
+    <center>
+      <p>thank for the registration</p>
+      <a href="index.html">
+      <button onclick="hidePopup()">Close</button></a>
+    </center>
+  </div>
+
+  <!-- Overlay to cover the background when the popup is open -->
+  <div id="overlay" class="overlay"></div>
+
+  <script>
+      // JavaScript to show the popup
+      function showPopup() {
+          document.getElementById("popup").style.display = "block";
+          document.getElementById("overlay").style.display = "block";
+      }
+
+      // JavaScript to hide the popup
+      function hidePopup() {
+          document.getElementById("popup").style.display = "none";
+          document.getElementById("overlay").style.display = "none";
+      }
+  </script>
+
+<style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      animation: changeBackground 1000s infinite;
+    }
+
+    @keyframes changeBackground {
+      0% {
+        background-image: url('weee/logo.jpg');
+      }
+
+      h1 {
+    text-align: center;
+    color: #6fd666;
+}
+    }
+  </style>
+
+</body>
+</html>

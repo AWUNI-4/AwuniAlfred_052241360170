@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Faculty Details</title>
+
+</head>
+<body>
+    <style>
+        /* Style for the colored box */
+        .colored-box {
+            background-color: #317daf; /* Set the background color */
+            height: 5px; /* Set the height */
+            width: auto; /* Set the width */
+            margin: 20px; /* Add some margin for spacing */
+            padding: 10px; /* Add some padding for content spacing */
+            color: #fff; /* Set the text color */
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your colored box with height, width, and color -->
+    <div class="colored-box">
+         <!--Thank You For Paying Your Fees.-->
+    </div>
+    <header>
+        <center>
+            <h1>Faculty Details</h1>
+        </center>
+    </header>
+    <section class="content">
+        <!-- Add faculty details here -->
+        <body>
+
+            <h1>User Data Form</h1>
+        
+            <form id="userDataForm">
+                <div style="width: 100%; overflow: hidden;">
+                    <div style="float: left; width: 60%;">
+                        <p>                  <pre>
+                            <big>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required><br>
+                
+                        <button type="button" onclick="submitForm()">Add User</button>
+                            </big>
+                          </pre></p>
+                    </div>
+                
+                    <div style="float: right; width: 40%;">
+                        <img src="weee/logo.jpg" height="300" width="600" style="display: block; width: 100%; height: auto;">
+                    </div>
+                </div>
+                
+
+            </form>
+        
+        
+            <h2>User Data Table</h2>
+            <table id="userDataTable">
+                <thead>
+                    <tr>
+                        <pre>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        </pre>
+                    </tr>
+                </thead>
+                <tbody id="userDataBody"></tbody>
+            </table>
+        
+            <script>
+                function submitForm() {
+                    // Get form values
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var age = document.getElementById("age").value;
+        
+                    // Display data in table
+                    var tableBody = document.getElementById("userDataBody");
+                    var newRow = tableBody.insertRow(tableBody.rows.length);
+                    var cell1 = newRow.insertCell(0);
+                    var cell2 = newRow.insertCell(1);
+                    var cell3 = newRow.insertCell(2);
+                    cell1.innerHTML = name;
+                    cell2.innerHTML = email;
+                    cell3.innerHTML = age;
+        
+                    // Clear form fields
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("age").value = "";
+                }
+            </script>
+        
+        </body>
+<img src="weee/logo.jpg" height="400" width="1400">
+        <div fstyle="width: 100%; overflow: hidden;">
+            <div style="float: left; width: 60%;">
+                  <h2> click on the Video Playback to learn php installation  </h2>
+                  <video width="640" height="360" controls>
+                      <source src="weee/02.How To Install PHP What Are Web Servers - PHP 8 Tutorial.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+            </div>
+                   <div style="clear: both;">
+                   <div style="float: right; width: 10%;"></div>
+                          <h2> click below to Download the video</h2>
+                          <p><a href="weee/02.How To Install PHP What Are Web Servers - PHP 8 Tutorial.mp4" download>Download Video</a></p>
+                   
+                   </div>
+          
+          </div>>      
+          
+          
+                  <hr>
+                  <hr>
+                  <center>
+                   <h1>learn how to insert veriables using php</h1>
+                 </center>
+                          <p><a href="weee/BACK – END WEB DEVELOPMENT TECHNOLOGY_update_ver.pdf" download>Download back end pdf for TECHNOLOGY_update_ver</a></p>
+                          <p><a href="weee/BACK – END WEB DEVELOPMENT TECHNOLOGY wk2.pptx" download>Download back end pptx</a></p>
+                          <p><a href="weee/BACK – END WEB DEVELOPMENT TECHNOLOGY.pptx" download>Download back end pptx</a></p>
+                  
+                  
+                          <script>
+                              // Prevent default behavior for folder links
+                              document.querySelectorAll('a[href$="/"]').forEach(function(link) {
+                                  link.addEventListener('click', function(e) {
+                                      e.preventDefault();
+                                      var folderPath = link.getAttribute('href');
+                                      // Redirect to the folder path
+                                      window.location.href = folderPath;
+                                  });
+                              });
+                          </script>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 Faculty Website</p>
+    </footer>
+    <style>
+        /* Style for the colored box */
+        .colored-box {
+            background-color: #317daf; /* Set the background color */
+            height: 100px; /* Set the height */
+            width: auto; /* Set the width */
+            margin: 20px; /* Add some margin for spacing */
+            padding: 10px; /* Add some padding for content spacing */
+            color: #fff; /* Set the text color */
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your colored box with height, width, and color -->
+    <div class="colored-box">
+        <big>
+            <pre>
+         tel : 0595966198
+
+
+         email : millidizzy@gmail.com
+            </pre>
+        </big>
+    </div>
+
+</body>
+</html>
